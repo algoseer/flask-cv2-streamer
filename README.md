@@ -12,3 +12,14 @@ python app.py
 ```
 
 Code was written using gemini-flash-2.5
+
+### Object Detection (optional)
+
+There is a version `app_yolo.py` that uses `yolov3` to detect objects real-time. Follow instructions below to install the models and run this verrsion.
+
+```
+curl -O https://raw.githubusercontent.com/pjreddie/darknet/refs/heads/master/cfg/yolov3.cfg
+curl -O https://raw.githubusercontent.com/pjreddie/darknet/refs/heads/master/data/coco.names
+curl -O https://data.pjreddie.com/files/yolov3.weights
+python app_yolo.py
+```
